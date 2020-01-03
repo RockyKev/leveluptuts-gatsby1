@@ -27,10 +27,10 @@ exports.createPages = ({ graphql, actions }) => {
     `).then(results => {
       results.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
-          path: node.frontmatter.slug,
+          path: `/posts${node.frontmatter.slug}`,
           component: path.resolve("./src/components/postLayout.js"),
           context: {
-            slug: node.formatter.slug,
+            slug: node.frontmatter.slug,
           },
         });
       });
