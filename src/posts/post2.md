@@ -1,7 +1,7 @@
 ---
-slug: "/first-post"
-title: "Our First Post"
-date: "2020-01-02"
+slug: "/second-post"
+title: "Our Second Post"
+date: "2020-01-04"
 ---
 
 # Heading
