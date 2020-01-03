@@ -33,6 +33,23 @@ const Post = styled.article`
   padding: 1rem;
   border-radius: 4px;
   margin-bottom: 1rem;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  h2 {
+    margin-bottom: 0;
+    color: green;
+  }
+  .read-more {
+    font-family: Helvetica;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    color: purple;
+  }
 `;
 
 const Listing = () => (
@@ -49,7 +66,9 @@ const Listing = () => (
           <p>
             {edge.node.excerpt}, Words: {edge.node.wordCount.words}
           </p>
-          <Link to={`/posts${edge.node.frontmatter.slug}`}>Read More</Link>
+          <Link class="read-more" to={`/posts${edge.node.frontmatter.slug}`}>
+            Read More
+          </Link>
         </Post>
       ))
     }

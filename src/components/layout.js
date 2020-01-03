@@ -20,17 +20,6 @@ const MainLayout = styled.main`
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 40px;
-  a {
-    color: #000;
-    text-decoration: none;
-  }
-  p {
-    font-size: 0.8rem;
-  }
-  h2 {
-    margin-bottom: 0;
-    color: green;
-  }
 `;
 
 const Layout = ({ children }) => {

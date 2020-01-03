@@ -13,7 +13,7 @@ const HeaderWrapper = styled.div`
 const HeaderContainer = styled.div`
   margin: 0 auto;
   max-width: 960;
-  padding: 1rem;
+  padding: 0.4rem;
   img {
     margin-bottom: 0;
   }
