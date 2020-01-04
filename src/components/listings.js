@@ -66,7 +66,10 @@ const Listing = () => (
           <p>
             {edge.node.excerpt}, Words: {edge.node.wordCount.words}
           </p>
-          <Link class="read-more" to={`/posts${edge.node.frontmatter.slug}`}>
+          <Link
+            className="read-more"
+            to={`/posts${edge.node.frontmatter.slug}`}
+          >
             Read More
           </Link>
         </Post>
