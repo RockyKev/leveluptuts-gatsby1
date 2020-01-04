@@ -1,14 +1,8 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
+import Img from "gatsby-image";
 
 import Header from "./header";
 import Archive from "./archive";
@@ -30,12 +24,21 @@ const Layout = ({ children }) => {
           title
         }
       }
+      file(relativePath: { regex: "/bg/" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            # src
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
+      <Img fluid={data.file.childImageSharp.fluid} />
       <div>
         <MainLayout>
           <div>{children}</div>
