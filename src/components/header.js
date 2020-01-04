@@ -7,7 +7,7 @@ import logo from "../images/mario-pose3.png";
 
 const HeaderWrapper = styled.div`
   background: red;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0rem;
 `;
 
 const HeaderContainer = styled.div`
