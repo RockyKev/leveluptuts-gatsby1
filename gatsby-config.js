@@ -22,7 +22,7 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-transformer-sharp`, //images
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

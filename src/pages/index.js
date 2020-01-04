@@ -1,14 +1,12 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import Layout from "../components/layout";
+import Listing from "../components/listings";
 // import Image from "../components/image"
 // import SEO from "../components/seo"
 
-import Listing from "../components/listings";
-
-const IndexPage = () => (
-  <Layout>
+const IndexPage = ({ location }) => (
+  <Layout location={location}>
     <Listing />
   </Layout>
 );
